@@ -1,0 +1,28 @@
+{
+  "name": "aksara",
+  "scripts": {
+    "install-client": "cd client && bun install",
+    "install-server": "bun install",
+    "client": "cd client && bun run dev",
+    "dev-server": "bun --env-file .env --watch server.js",
+    "dev": "conc -n \"CLIENT,API\" -c \"cyan,magenta,yellow\" \"npm:client\" \"npm:dev-server\"",
+    "build-client": "cd client && bun run build",
+    "start": "NODE_ENV=production bun --env-file .env server.js"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  },
+  "module": "server.js",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
