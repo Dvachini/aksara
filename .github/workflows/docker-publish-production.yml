@@ -50,5 +50,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd ~/aksara
-            docker compose pull aksara
+            docker compose pull aksara || docker pull dvachini/aksara:production
             docker compose up -d aksara
+            docker image prune -f
