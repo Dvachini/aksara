@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <Header />
-      <div className='flex flex-col pt-36 px-5 md:px-10 w-full min-h-screen bg-[#e9edf4] overflow-y-auto'>
+      <div className='flex flex-col pt-36 px-2 sm:px-5 md:px-10 w-full min-h-screen bg-[#e9edf4] overflow-y-auto'>
         <div className='w-full bg-white rounded-xl shadow-md overflow-hidden p-8'>
           <h1 className='text-2xl font-bold mb-6'>
             <span>About</span>{' '}
@@ -47,15 +47,19 @@ export default function About() {
           </div>
 
           <div className='bg-white rounded-lg shadow-md p-0 overflow-hidden'>
-            <iframe
-              title='Aksara Dental Clinic'
-              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4052.1515720299763!2d101.65783438812156!3d3.4617796064028763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc6d21d738cdf1%3A0x11dfa4baefa35497!2sKLINIK%20PERGIGIAN%20AKSARA%20BATANG%20KALI!5e0!3m2!1sen!2smy!4v1762886074886!5m2!1sen!2smy'
-              className='w-full h-80'
-              style={{ border: 0 }}
-              allowFullScreen
-              loading='lazy'
-              referrerPolicy='no-referrer-when-downgrade'
-            ></iframe>
+            {typeof window !== 'undefined' ? (
+              <iframe
+                title='Aksara Dental Clinic'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4052.1515720299763!2d101.65783438812156!3d3.4617796064028763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc6d21d738cdf1%3A0x11dfa4baefa35497!2sKLINIK%20PERGIGIAN%20AKSARA%20BATANG%20KALI!5e0!3m2!1sen!2smy!4v1762886074886!5m2!1sen!2smy'
+                className='w-full h-80'
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading='lazy'
+                referrerPolicy='no-referrer-when-downgrade'
+              />
+            ) : (
+              <p className='p-4 text-sm'>Loading map...</p>
+            )}
           </div>
         </div>
       </div>

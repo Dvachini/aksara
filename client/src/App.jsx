@@ -1,8 +1,9 @@
+import { lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router';
 
 import Landing from './Landing/LandingPage';
-import About from './Landing/About';
-import NotFound from './not-found/NotFound';
+const About = lazy(() => import('./Landing/About'));
+const NotFound = lazy(() => import('./not-found/NotFound'));
 
 function App() {
   return (

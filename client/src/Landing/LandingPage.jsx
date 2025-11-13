@@ -1,7 +1,8 @@
 import { FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 import Header from './Header';
-import malay from '../assets/malay1.png';
+import topek from '../assets/topek.png';
 import braces from '../assets/braces.png';
 import cavity from '../assets/cavity.png';
 import whitening from '../assets/whitening.png';
@@ -13,31 +14,36 @@ export default function LandingPage() {
       <Header />
       <div className='flex flex-col px-2 sm:px-5 md:px-10 items-start pt-36 w-full min-h-screen bg-[#e9edf4] overflow-y-auto'>
         <div className='w-full  bg-white rounded-xl shadow-md overflow-hidden'>
-          <div className='flex justify-between items-center'>
+          <div className='flex flex-col md:flex-row justify-between'>
             <div className='py-4 md:py-8 pl-5 md:pl-10'>
               <p className='text-gray-600 text-lg sm:text-2xl md:text-4xl'>
                 Comprehensive Dental Care
               </p>
               <p className='text-[#2b638b] font-bold text-2xl sm:text-4xl md:text-6xl'>
-                @ Aksara Dental
+                @Aksara Dental
+              </p>
+              <p className='text-xs md:text-sm text-gray-800 mt-3'>
+                Dr Muhammad Taufiq bin Wildani
+              </p>
+              <p className='text-xs md:text-sm text-gray-500'>
+                BDMS Tanta, Egypt
               </p>
               <div className='mt-6 flex space-x-4'>
-                <a
-                  href='http://www.wasap.my/601167319191'
-                  target='_blank'
+                <Link
+                  to='https://wa.me/message/6MZ7FI7JSPGDH1'
                   rel='noopener noreferrer'
                   className='bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md flex items-center space-x-2'
                 >
                   <FaWhatsapp className='text-xl' />
                   <span>Chat with Us</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className=''>
               <img
-                className='h-48 w-full object-cover md:h-full md:w-48'
-                src={malay}
-                alt='Aksara Dental'
+                className=' w-full object-cover h-full md:w-48'
+                src={topek}
+                alt='Dr Taufiq'
               />
             </div>
           </div>
