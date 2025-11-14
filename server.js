@@ -7,7 +7,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(compression());
-app.use(helmet());
+app.use(
+  helmet(
+    helmet({
+      contentSecurityPolicy: false,
+      crossOriginResourcePolicy: { policy: 'cross-origin' },
+    })
+  )
+);
 
 app.use(express.static(path.join(process.cwd(), 'dist')));
 
