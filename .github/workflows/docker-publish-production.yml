@@ -49,7 +49,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd ~/traefik
+            cd ~/aksara
             docker compose pull aksara || docker pull dvachini/aksara:production
             docker compose up -d aksara
             docker image prune -f
