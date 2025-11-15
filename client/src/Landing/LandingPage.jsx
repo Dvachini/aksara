@@ -72,7 +72,7 @@ export default function LandingPage() {
           ];
           const pickImg = (name) => {
             if (name.includes('Brace')) return braces;
-            if (name.includes('Whitening')) return whitening;
+            if (/Scaling|Whitening|Polishing/i.test(name)) return whitening;
             if (name.includes('Checkup')) return checkup;
             if (
               /Filling|Veneer|Crown|Bridge|Root Canal|Denture|Composite|Sealant|Retainer|Diastema|Fiber|Gingivectomy/i.test(
@@ -80,8 +80,7 @@ export default function LandingPage() {
               )
             )
               return tooth;
-            if (/Scaling|Polishing|Extraction|Surgery|Fluoride/i.test(name))
-              return checkup;
+            if (/Extraction|Surgery|Fluoride/i.test(name)) return checkup;
             return checkup;
           };
           return (
