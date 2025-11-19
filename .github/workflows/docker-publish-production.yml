@@ -40,7 +40,8 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           source: '.env'
-          target: '~/aksara/.env'
+          target: '~/aksara/'
+          overwrite: true
 
       - name: 🚀 Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
