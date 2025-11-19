@@ -31,7 +31,7 @@ export default function LandingPage() {
               </p>
               <div className='mt-6 flex space-x-4'>
                 <Link
-                  to='https://wa.me/message/6MZ7FI7JSPGDH1'
+                  to='http://www.wasap.my/601167319191'
                   rel='noopener noreferrer'
                   className='bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md flex items-center space-x-2'
                 >

@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import Header from './Header';
+import { Link } from 'react-router';
+
+import map from '../assets/map.png';
+
 export default function About() {
   const [mapError, setMapError] = useState(false);
   return (
@@ -48,26 +52,18 @@ export default function About() {
           </div>
 
           <div className='bg-white rounded-lg shadow-md p-0 overflow-hidden'>
-            {typeof window !== 'undefined' ? (
-              mapError ? (
-                <div className='p-4 text-sm text-red-600'>
-                  Map content is unavailable. Please try again later.
-                </div>
-              ) : (
-                <iframe
-                  title='Aksara Dental Clinic'
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4052.1515720299763!2d101.65783438812156!3d3.4617796064028763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc6d21d738cdf1%3A0x11dfa4baefa35497!2sKLINIK%20PERGIGIAN%20AKSARA%20BATANG%20KALI!5e0!3m2!1sen!2smy!4v1762886074886!5m2!1sen!2smy'
-                  className='w-full h-80'
-                  style={{ border: 0 }}
-                  allowFullScreen={true}
-                  loading='lazy'
-                  referrerPolicy='no-referrer-when-downgrade'
-                  onError={() => setMapError(true)}
-                />
-              )
-            ) : (
-              <p className='p-4 text-sm'>Loading map...</p>
-            )}
+            <Link
+              to='https://www.google.com/maps/place/KLINIK+PERGIGIAN+AKSARA+BATANG+KALI/@3.46163,101.65796,15z/data=!4m6!3m5!1s0x31cc6d21d738cdf1:0x11dfa4baefa35497!8m2!3d3.4617797!4d101.6578312!16s%2Fg%2F11l2vx5r6_?hl=en&entry=ttu&g_ep=EgoyMDI1MTExNi4wIKXMDSoASAFQAw%3D%3D'
+              target='_blank'
+              rel='noreferrer'
+              title='Sila klik untuk lebih lanjut'
+            >
+              <img
+                src={map}
+                alt='Map to Aksara Dental Clinic'
+                className='w-full h-full object-cover rounded-lg'
+              />
+            </Link>
           </div>
         </div>
       </div>

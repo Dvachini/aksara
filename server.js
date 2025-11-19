@@ -12,6 +12,8 @@ app.use(
     helmet({
       contentSecurityPolicy: false,
       crossOriginResourcePolicy: { policy: 'cross-origin' },
+      strictTransportSecurity: false,
+      xPoweredBy: false,
     })
   )
 );
@@ -26,7 +28,7 @@ app.use('/', (req, res, next) => {
 try {
   app.listen(PORT, () => {
     console.log(
-      `[app] epanggil is running on port ${PORT} | Deploy mode: ${
+      `[app] aksara is running on port ${PORT} | Deploy mode: ${
         process.env.NODE_ENV ? process.env.NODE_ENV : 'production'
       }`
     );
