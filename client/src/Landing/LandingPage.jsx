@@ -21,7 +21,7 @@ export default function LandingPage() {
                 Comprehensive Dental Care
               </p>
               <p className='text-[#2b638b] font-bold text-2xl sm:text-4xl md:text-6xl'>
-                @AksaraDental
+                @Aksara Dental
               </p>
               <p className='text-xs md:text-sm text-gray-800 mt-3'>
                 Dr Muhammad Taufiq bin Wildani
