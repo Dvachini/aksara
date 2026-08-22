@@ -1,25 +1,24 @@
-import { useState } from 'react';
-import Header from './Header';
 import { Link } from 'react-router';
 
+import Header from './Header';
 import map from '../assets/map.png';
 
 export default function About() {
-  const [mapError, setMapError] = useState(false);
   return (
     <>
       <Header />
-      <div className='flex flex-col pt-36 px-2 sm:px-5 md:px-10 w-full min-h-screen bg-[#e9edf4] overflow-y-auto'>
+      <div className='flex flex-col pt-36 px-2 sm:px-5 md:px-10 w-full min-h-screen bg-brand-pale overflow-y-auto'>
         <div className='w-full bg-white rounded-xl shadow-md overflow-hidden p-8'>
           <h1 className='text-2xl font-bold mb-6'>
             <span>About</span>{' '}
-            <span className='text-[#2b638b] font-bold'>Us</span>
+            <span className='text-brand'>Us</span>
           </h1>
           <p className='mb-2 text-sm'>
-            Taufiq Dental Clinic is committed to providing comprehensive dental
-            care with a focus on patient comfort and satisfaction. Our team of
-            experienced dental professionals utilizes the latest technology and
-            techniques to ensure the best possible outcomes for our patients.
+            Dr Taufiq Dental Clinic is committed to providing comprehensive
+            dental care with a focus on patient comfort and satisfaction. Our
+            team of experienced dental professionals utilizes the latest
+            technology and techniques to ensure the best possible outcomes for
+            our patients.
           </p>
           <p className='mb-2 text-sm'>
             We offer a wide range of services including general dentistry,
@@ -28,11 +27,10 @@ export default function About() {
             for all our patients.
           </p>
           <p className='mb-2 text-sm'>
-            At Taufiq Dental Clinic, we believe in educating our patients about
-            their
-            oral health and empowering them to make informed decisions about
-            their dental care. We look forward to helping you achieve a healthy
-            and beautiful smile!
+            At Dr Taufiq Dental Clinic, we believe in educating our patients
+            about their oral health and empowering them to make informed
+            decisions about their dental care. We look forward to helping you
+            achieve a healthy and beautiful smile!
           </p>
         </div>
 
@@ -41,7 +39,7 @@ export default function About() {
             <h1 className='text-xl font-bold'>Contact</h1>
             <p className='text-sm flex flex-col space-y-1'>
               <span className='font-bold'>Address:</span>
-              <span>Taufiq Dental Clinic (Batang Kali),</span>
+              <span>Dr Taufiq Dental Clinic (Batang Kali),</span>
               <span>No 1, Tingkat Atas Jalan Mahagoni 7/1A,</span>
               <span>Batang Kali, Pekan Batang Kali,</span>
               <span>44300 Batang Kali, Selangor, Malaysia</span>
@@ -54,19 +52,24 @@ export default function About() {
 
           <div className='bg-white rounded-lg shadow-md p-0 overflow-hidden'>
             <Link
-              to='https://www.google.com/maps/place/KLINIK+PERGIGIAN+AKSARA+BATANG+KALI/@3.46163,101.65796,15z/data=!4m6!3m5!1s0x31cc6d21d738cdf1:0x11dfa4baefa35497!8m2!3d3.4617797!4d101.6578312!16s%2Fg%2F11l2vx5r6_?hl=en&entry=ttu&g_ep=EgoyMDI1MTExNi4wIKXMDSoASAFQAw%3D%3D'
+              to='https://www.google.com/maps/place/KLINIK+PERGIGIAN+AKSARA+BATANG+KALI/@3.46163,101.65796,15z/data=!4m6!3m5!1s0x31cc6d21d738cdf1:0x11dfa4baefa35497!8m2!3d3.4617797!4d101.6578312!16s%2Fg%2F11l2vx5r6_?hl=en&entry=ttu'
               target='_blank'
               rel='noreferrer'
               title='Sila klik untuk lebih lanjut'
             >
               <img
                 src={map}
-                alt='Map to Taufiq Dental Clinic'
+                alt='Map to Dr Taufiq Dental Clinic'
                 className='w-full h-full object-cover rounded-lg'
               />
             </Link>
           </div>
         </div>
+
+        <footer className='w-full text-center text-xs text-ink/50 py-4'>
+          © {new Date().getFullYear()} Dr Taufiq Dental Clinic · Batang Kali,
+          Selangor
+        </footer>
       </div>
     </>
   );

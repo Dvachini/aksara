@@ -1,8 +1,20 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-brand: #5a8d91;
+  --color-brand-dark: #48737a;
+  --color-brand-deep: #2f5560;
+  --color-brand-pale: #eef4f4;
+  --color-ink: #17323a;
+}
+
 @layer base {
   button:not(:disabled),
   [role='button']:not(:disabled) {
     cursor: pointer;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }

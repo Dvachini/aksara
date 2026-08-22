@@ -6,24 +6,35 @@ import { FaWaze, FaMapMarkedAlt } from 'react-icons/fa';
 
 export default function Header() {
   return (
-    <header className='fixed top-0 left-0 w-full py-2 z-10 bg-[#e9edf4]'>
-      <div className='flex justify-between px-4 md:px-20 pt-4'>
-        <Link to='/' className='text-gray-700 hover:text-gray-900 '>
+    <header className='fixed top-0 left-0 w-full py-2 z-20 bg-brand-pale/95 backdrop-blur border-b border-brand/20'>
+      <div className='flex justify-between items-center px-4 md:px-20 pt-2'>
+        <Link to='/' className='flex items-center gap-3 group'>
           <img
             src='/logotaufiq.png'
-            alt='Taufiq Dental Clinic Logo'
-            className=' w-24 h-24 rounded-full bg-white'
+            alt='Dr Taufiq Dental Clinic logo'
+            className='w-14 h-14 md:w-16 md:h-16 shrink-0'
           />
+          <span className='leading-tight'>
+            <span className='block font-bold text-ink text-base md:text-lg group-hover:text-brand-deep'>
+              Dr Taufiq
+            </span>
+            <span className='block text-brand-dark text-xs md:text-sm font-medium tracking-wide uppercase'>
+              Dental Clinic · Est 2025
+            </span>
+          </span>
         </Link>
-        <div className='flex items-center space-x-10 text-base'>
-          <Link to='/' className='text-gray-700 hover:text-gray-900 '>
+        <div className='flex items-center space-x-6 md:space-x-10 text-base'>
+          <Link
+            to='/'
+            className='text-ink/80 hover:text-brand-deep hidden sm:block'
+          >
             Home
           </Link>
-          <Link to='/about' className='text-gray-700 hover:text-gray-900 '>
+          <Link to='/about' className='text-ink/80 hover:text-brand-deep'>
             About
           </Link>
           <Popover>
-            <PopoverButton className='bg-[#2b638b] text-white px-2 md:px-4 py-2 rounded-lg hover:bg-[#2b638b]/50 flex items-center gap-2 justify-center focus:outline-none data-active:text-white data-focus:outline data-focus:outline-white data-hover:text-white cursor-pointer'>
+            <PopoverButton className='bg-brand text-white px-2 md:px-4 py-2 rounded-lg hover:bg-brand-dark flex items-center gap-2 justify-center focus:outline-none data-active:text-white data-focus:outline data-focus:outline-white data-hover:text-white cursor-pointer'>
               <CiLocationOn className='text-xl' />
               <span className='hidden md:flex'>Find Us</span>
             </PopoverButton>
