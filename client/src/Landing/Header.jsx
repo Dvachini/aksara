@@ -8,17 +8,17 @@ export default function Header() {
   return (
     <header className='fixed top-0 left-0 w-full py-2 z-20 bg-brand-pale/95 backdrop-blur border-b border-brand/20'>
       <div className='flex justify-between items-center px-4 md:px-20 pt-2'>
-        <Link to='/' className='flex items-center gap-3 group'>
+        <Link to='/' className='flex items-center gap-2 sm:gap-3 group'>
           <img
             src='/logotaufiq.png'
             alt='Dr Taufiq Dental Clinic logo'
-            className='w-14 h-14 md:w-16 md:h-16 shrink-0'
+            className='w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 shrink-0'
           />
           <span className='leading-tight'>
             <span className='block font-bold text-ink text-base md:text-lg group-hover:text-brand-deep'>
               Dr Taufiq
             </span>
-            <span className='block text-brand-dark text-xs md:text-sm font-medium tracking-wide uppercase'>
+            <span className='hidden sm:block text-brand-dark text-xs md:text-sm font-medium tracking-wide uppercase'>
               Dental Clinic · Est 2025
             </span>
           </span>

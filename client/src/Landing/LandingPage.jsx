@@ -58,7 +58,7 @@ export default function LandingPage() {
             </div>
             <div className='md:w-64 lg:w-80 shrink-0'>
               <img
-                className='w-full object-cover h-56 md:h-full'
+                className='w-full object-cover object-top md:h-full'
                 src={topek}
                 alt='Dr Taufiq at the clinic'
               />
