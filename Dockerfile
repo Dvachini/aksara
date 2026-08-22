@@ -21,8 +21,9 @@ WORKDIR /app
 # Stage 2: Production Stage
 FROM oven/bun:1.3-alpine
 
-# Install for alpine
+# Install for alpine + upgrade base packages (fixes CVEs in shipped OpenSSL etc.)
 RUN apk update --no-cache && \
+    apk upgrade --no-cache && \
     apk add --no-cache curl tzdata
 
 # Set timezone data
