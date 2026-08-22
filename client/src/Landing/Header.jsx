@@ -18,8 +18,9 @@ export default function Header() {
             <span className='block font-bold text-ink text-base md:text-lg group-hover:text-brand-deep'>
               Dr Taufiq
             </span>
-            <span className='hidden sm:block text-brand-dark text-xs md:text-sm font-medium tracking-wide uppercase'>
-              Dental Clinic · Est 2025
+            <span className='block text-brand-dark text-xs md:text-sm font-medium tracking-wide uppercase'>
+              Dental Clinic
+              <span className='hidden sm:inline'> · Est 2025</span>
             </span>
           </span>
         </Link>
