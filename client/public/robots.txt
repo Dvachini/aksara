@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drtaufiq.klini.cc/sitemap.xml
