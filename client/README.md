@@ -1,6 +1,6 @@
-# Aksara Client
+# Taufiq Dental Clinic Client
 
-React (or Next.js) frontend for Aksara.
+React frontend for Taufiq Dental Clinic.
 
 ## Tech Stack
 
@@ -8,7 +8,7 @@ React (or Next.js) frontend for Aksara.
 - Language: TypeScript
 - Styling: Tailwind CSS (if used)
 - State/Data: React Query / Context / Redux (specify)
-- API: REST/GraphQL to Aksara backend
+- API: REST/GraphQL to Taufiq backend
 
 ## Prerequisites
 

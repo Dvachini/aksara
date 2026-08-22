@@ -10,8 +10,8 @@ export default function Header() {
       <div className='flex justify-between px-4 md:px-20 pt-4'>
         <Link to='/' className='text-gray-700 hover:text-gray-900 '>
           <img
-            src='/logoaksara.svg'
-            alt='Aksara Logo'
+            src='/logotaufiq.png'
+            alt='Taufiq Dental Clinic Logo'
             className=' w-24 h-24 rounded-full bg-white'
           />
         </Link>

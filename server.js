@@ -28,7 +28,7 @@ app.use('/', (req, res, next) => {
 try {
   app.listen(PORT, () => {
     console.log(
-      `[app] aksara is running on port ${PORT} | Deploy mode: ${
+      `[app] taufiq is running on port ${PORT} | Deploy mode: ${
         process.env.NODE_ENV ? process.env.NODE_ENV : 'production'
       }`
     );

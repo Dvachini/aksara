@@ -16,8 +16,8 @@ export default function About() {
             <span className='text-[#2b638b] font-bold'>Us</span>
           </h1>
           <p className='mb-2 text-sm'>
-            Aksara Dental is committed to providing comprehensive dental care
-            with a focus on patient comfort and satisfaction. Our team of
+            Taufiq Dental Clinic is committed to providing comprehensive dental
+            care with a focus on patient comfort and satisfaction. Our team of
             experienced dental professionals utilizes the latest technology and
             techniques to ensure the best possible outcomes for our patients.
           </p>
@@ -28,7 +28,8 @@ export default function About() {
             for all our patients.
           </p>
           <p className='mb-2 text-sm'>
-            At Aksara Dental, we believe in educating our patients about their
+            At Taufiq Dental Clinic, we believe in educating our patients about
+            their
             oral health and empowering them to make informed decisions about
             their dental care. We look forward to helping you achieve a healthy
             and beautiful smile!
@@ -40,7 +41,7 @@ export default function About() {
             <h1 className='text-xl font-bold'>Contact</h1>
             <p className='text-sm flex flex-col space-y-1'>
               <span className='font-bold'>Address:</span>
-              <span>Klinik Pergigian Aksara (Batang Kali),</span>
+              <span>Taufiq Dental Clinic (Batang Kali),</span>
               <span>No 1, Tingkat Atas Jalan Mahagoni 7/1A,</span>
               <span>Batang Kali, Pekan Batang Kali,</span>
               <span>44300 Batang Kali, Selangor, Malaysia</span>
@@ -60,7 +61,7 @@ export default function About() {
             >
               <img
                 src={map}
-                alt='Map to Aksara Dental Clinic'
+                alt='Map to Taufiq Dental Clinic'
                 className='w-full h-full object-cover rounded-lg'
               />
             </Link>

@@ -1,6 +1,6 @@
-# Aksara
+# Taufiq Dental Clinic
 
-Brief project description. One or two sentences explaining purpose.
+Website for Taufiq Dental Clinic — comprehensive dental care in Batang Kali.
 
 ## Features
 
@@ -18,7 +18,7 @@ Brief project description. One or two sentences explaining purpose.
 ## Installation
 
 ```bash
-git clone https://github.com/your-org/aksara.git
+git clone https://github.com/Dvachini/aksara.git
 cd aksara
 pnpm install
 ```

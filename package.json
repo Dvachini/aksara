@@ -1,5 +1,5 @@
 {
-  "name": "aksara",
+  "name": "taufiq",
   "scripts": {
     "install-client": "cd client && bun install",
     "install-server": "bun install",
