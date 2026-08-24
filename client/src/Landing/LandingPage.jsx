@@ -70,7 +70,7 @@ export default function LandingPage() {
         <Reviews />
 
         <footer className='w-full text-center text-xs text-ink/50 py-4'>
-          © {new Date().getFullYear()} Dr Taufiq Dental Clinic · Batang Kali,
+          © 2026 Dr Taufiq Dental Clinic · Batang Kali,
           Selangor
         </footer>
       </div>
