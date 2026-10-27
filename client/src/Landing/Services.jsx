@@ -169,7 +169,7 @@ export default function Services() {
             onClick={() => setActive(c)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${
               active === c
-                ? 'bg-brand text-white'
+                ? 'bg-brand-dark text-white'
                 : 'bg-brand-pale text-brand-deep hover:bg-brand/20'
             }`}
           >
