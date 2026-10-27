@@ -35,7 +35,7 @@ export default function Header() {
             About
           </Link>
           <Popover>
-            <PopoverButton className='bg-brand text-white px-2 md:px-4 py-2 rounded-lg hover:bg-brand-dark flex items-center gap-2 justify-center focus:outline-none data-active:text-white data-focus:outline data-focus:outline-white data-hover:text-white cursor-pointer'>
+            <PopoverButton className='bg-brand-dark text-white px-2 md:px-4 py-2 rounded-lg hover:bg-brand-deep flex items-center gap-2 justify-center data-active:text-white data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-brand-deep data-hover:text-white cursor-pointer'>
               <CiLocationOn className='text-xl' />
               <span className='hidden md:flex'>Find Us</span>
             </PopoverButton>
